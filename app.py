@@ -191,7 +191,7 @@ if prompt is not None:
     # Process the images into an API-compatible format
 
     images = []
-    if uploaded = 
+    if uploaded :
         images =[
             {
                 "mime_type": f"image/{f.type.split('/')[-1]} " if f.type else 'image/png',
