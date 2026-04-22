@@ -168,7 +168,7 @@ def get_text_output(response:Any) -> str:
 
 # Render all previous messages
 for m in st.session_state.messages:
-        with st.chat_message(m["role"]):
+    with st.chat_message(m["role"]):
         if isinstance(m['content'], list):
             for part in m['content']:
                 if p.get("type") == "message":
